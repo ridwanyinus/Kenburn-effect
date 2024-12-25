@@ -3,7 +3,7 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'kenburns effect',
+  title: 'React nextjs kenburns effect',
   description: 'Made with 🖤',
 };
 
