@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <section className='p-10'>
+      <section className='p-10 overflow-x-hidden'>
         <div id='main_slider' data-version='5.1.1RC'>
           <ul>
             <li
