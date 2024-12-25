@@ -4,8 +4,8 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <section className='main_slider_area'>
-        <div id='main_slider' className='rev_slider' data-version='5.1.1RC'>
+      <section className='main_slider_area p-10 max-w-[50vw]'>
+        <div id='main_slider' className='rev_slider max-w-[50vw]' data-version='5.1.1RC'>
           <ul>
             <li
               data-index='rs-81'
@@ -17,17 +17,17 @@ export default function Home() {
               data-thumb='/slider-3.jpeg'
               data-title='Event Video'>
               <Image
-                width={1500}
-                height={1500}
+                width={1000}
+                height={1000}
                 src='/slider-3.jpeg'
-                alt='man hand with glowing background'
+                alt='man hand with a glowing background'
                 data-lazyload='/slider-3.jpeg'
                 data-bgposition='left center'
                 data-kenburns='on'
                 data-duration='30000'
                 data-scalestart='110'
                 data-scaleend='100'
-                className='rev-slidebg'
+                className='rev-slidebg p-5 overflow-hidden max-w-screen'
                 data-no-retina
               />
             </li>
