@@ -27,11 +27,11 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <Script src='/js/jquery-3.4.1.min.js' />
-        <Script src='/vendors/revolution/js/jquery.themepunch.tools.min.js' strategy='afterInteractive' />
-        <Script src='/vendors/revolution/js/jquery.themepunch.revolution.min.js' strategy='afterInteractive' />
-        <Script src='/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' strategy='afterInteractive' />
-        <Script src='/js/theme.js' strategy='afterInteractive' />
+        <Script src='./js/jquery-3.4.1.min.js' />
+        <Script src='./vendors/revolution/js/jquery.themepunch.tools.min.js' strategy='afterInteractive' />
+        <Script src='./vendors/revolution/js/jquery.themepunch.revolution.min.js' strategy='afterInteractive' />
+        <Script src='./vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' strategy='afterInteractive' />
+        <Script src='./js/theme.js' strategy='afterInteractive' />
       </body>
     </html>
   );
