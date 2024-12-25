@@ -7,6 +7,8 @@ interface RevolutionOptions {
   disableProgressBar: string;
   lazyType: string;
   responsiveLevels: number[];
+  sliderLayout: string;
+  sliderType: string;
 }
 
 interface RevolutionInstance {
@@ -33,8 +35,10 @@ export default function SliderInit() {
       if (typeof window.jQuery?.fn?.revolution !== 'undefined') {
         clearInterval(interval);
         window.jQuery('#main_slider').revolution({
+          sliderType: 'standard',
+          sliderLayout: 'auto',
           delay: 9000,
-          disableProgressBar: 'on',
+          disableProgressBar: 'off',
           lazyType: 'smart',
           responsiveLevels: [4096, 1199, 992, 767, 540],
         });
