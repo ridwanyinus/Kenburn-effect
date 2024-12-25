@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <section className='p-10 overflow-x-hidden'>
+      <section className='p-10'>
         <div id='main_slider' data-version='5.1.1RC'>
           <ul>
             <li
@@ -27,7 +27,7 @@ export default function Home() {
                 data-duration='30000'
                 data-scalestart='110'
                 data-scaleend='100'
-                className='p-5 max-w-screen'
+                className='p-5 max-w-screen rev-slidebg'
                 data-no-retina
               />
             </li>
