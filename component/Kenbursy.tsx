@@ -1,10 +1,11 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import kenImg from '@/public/assets/img1.jpg';
 
 const KenburnsSlider = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [{ src: '/assets/img1.jpg', height: 120 }];
+  const images = [{ src: kenImg, height: 100 }];
 
   const FADE_DURATION = 1500;
 
@@ -20,13 +21,13 @@ const KenburnsSlider = () => {
       <div className='relative  w-full overflow-hidden'>
         {images.map((image, index) => (
           <div
-            key={image.src}
+            key={index}
             className={`transition-opacity duration-[${FADE_DURATION}ms] ease-in-out`}
             style={{
               opacity: currentImageIndex === index ? 1 : 0,
             }}>
             <div style={{ position: 'relative', width: '100%', height: `${image.height}vh`, overflow: 'hidden' }}>
-              <Image src={image.src} objectFit='cover' layout='fill' alt='' loading='eager' className='kenburns-animation' />
+              <Image src={image.src} alt='a young cute lady on bike' loading='eager' style={{ width: '100%', height: '100%', objectFit: 'cover' }} className='kenburns-animation' />
             </div>
           </div>
         ))}

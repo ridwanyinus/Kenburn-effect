@@ -1,10 +1,10 @@
-import Kenburn from '@/component/Kenburn';
 import KenBurnsEffect from '@/component/Kenbursy';
+import KenBurnsGSAPEffect from '@/component/KenburnGsap';
 export default function Home() {
   return (
     <>
-      <Kenburn />
-      <div className='min-h-[50vh]'></div>
+      <KenBurnsGSAPEffect />
+      <div className='min-h-[10vh]'></div>
       <KenBurnsEffect />
     </>
   );

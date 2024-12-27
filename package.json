@@ -9,18 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "jquery": "^3.7.1",
+    "gsap": "^3.12.5",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/jquery": "^3.5.32",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/velocity-animate": "^1.2.33",
     "eslint": "^9",
     "eslint-config-next": "15.1.2",
     "postcss": "^8",
