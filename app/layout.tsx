@@ -17,13 +17,13 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
 
-        <Script src='./js/jquery-3.4.1.min.js' />
+        <Script src='/js/jquery-3.4.1.min.js' />
 
         {/* main revolution slider from https://www.sliderrevolution.com/wordpress-sliders/ */}
-        <Script src='./vendors/revolution/js/jquery.themepunch.tools.min.js' strategy='afterInteractive' />
-        <Script src='./vendors/revolution/js/jquery.themepunch.revolution.min.js' strategy='afterInteractive' />
-        <Script src='./vendors/revolution/js/extensions/revolution.extension.kenburn.min.js' strategy='afterInteractive' />
-        <Script src='./js/theme.js' strategy='afterInteractive' />
+        <Script src='/revolution/js/jquery.themepunch.tools.min.js' strategy='afterInteractive' />
+        <Script src='/revolution/js/jquery.themepunch.revolution.min.js' strategy='afterInteractive' />
+        <Script src='/revolution/js/extensions/revolution.extension.kenburn.min.js' strategy='afterInteractive' />
+        <Script src='/js/theme.js' strategy='afterInteractive' />
       </body>
     </html>
   );
